@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang='en' ng-app='gh'>
+    <head>
+        <meta charset='utf-8'>
+        <title>GitHub Repos</title>
+
+        <meta name='viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'>
+
+        <link rel='stylesheet' href='/css/style.css'>
+    </head>
+    <body>
+        <main>
+            <header ng-controller='HeaderController as header'>
+                <h1>GitHub Repos</h1>
+                <form ng-submit='header.saveToken()'>
+                    <input type='text' placeholder='GitHub token' ng-model='header.token'>
+                    <input type='submit' value='Save'>
+                </form>
+            </header>
+
+            <section class='page-content' ui-view></section>
+        </main>
+
+        <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.9/angular.min.js'></script>
+        <script src='http://angular-ui.github.io/ui-router/release/angular-ui-router.js'></script>
+
+        <script src='app/gh.module.js'></script>
+        <script src='repos/user-repos.controller.js'></script>
+        <script src='repos/github.service.js'></script>
+        <script src='app/header.controller.js'></script>
+
+    </body>
+</html>
