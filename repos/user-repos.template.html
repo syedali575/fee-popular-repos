@@ -2,8 +2,8 @@
 <h2>GitHub Address Book</h2>
 
 <form ng-submit='repos.lookup(repos.user.login)'>
-    <input type='text' ng-model='repos.user.login' placeholder='GH Username'>
-    <input type='submit'>
+    <input type='text' ng-model='repos.user.login' placeholder='GH Username' class='form-control'>
+    <input type='submit' value='Get Repos' class='btn btn-primary'>
 </form>
 
 <section class='gh-repos'>

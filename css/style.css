@@ -1,3 +1,8 @@
+[type='text'] {
+    width: 20em;
+    display: inline-block;
+}
+
 .gh-repos ul {
     margin: 0;
     padding: 0;
