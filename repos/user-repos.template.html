@@ -8,7 +8,7 @@
 
 <section class='gh-repos'>
     <ul>
-        <li ng-repeat='repo in repos.list'>
+        <li ng-repeat='repo in repos.list | bypopularity'>
             <section class='gh-repo'>{{repo.name}}</section>
         </li>
     </ul>
