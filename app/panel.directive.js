@@ -11,7 +11,9 @@
     return{
       templateUrl:'/app/panel.template.html',
       restrict: 'A',
-      scope: {      },
+      scope: {
+        
+      },
 
       transclude: true
 
