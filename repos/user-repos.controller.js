@@ -9,6 +9,7 @@
         var vm = this;
         vm.list = [];
         vm.user = {};
+        vm.panel = false;
 
         vm.lookup = function lookup(user) {
             GithubService.getRepos(user)
@@ -20,5 +21,28 @@
                     console.error(err);
                 });
         };
+
+
+
+        vm.panelShow = function panelShow(name){
+          if(!vm.panel){
+          vm.panel = true;
+        }
+        else{
+          vm.panel = false;
+        }
+      };
+
+
+
     }
+
+
+
+
+
+
+
+
+
 })();

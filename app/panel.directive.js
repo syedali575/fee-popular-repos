@@ -12,7 +12,7 @@
       templateUrl:'/app/panel.template.html',
       restrict: 'A',
       scope: {
-        
+        repo: "=repodata"
       },
 
       transclude: true
