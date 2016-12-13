@@ -6,6 +6,8 @@
 
   function ByPopularity(){
 
+
+    // input is coming from repo.list
     return function sortByPopularity(input) {
       var pop = input.map(function getpop(repo){
         repo.pop = (repo.stargazers_count) + (repo.forks * 2) + (repo.open_issues/2);
